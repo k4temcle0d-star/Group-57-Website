@@ -1,27 +1,26 @@
-/* ── Table Wrapper ───────────────────────────────────────────── */
-/* Wrap tables in <div class="table-wrapper"> for horizontal scroll on mobile */
+/* Table Wrapper */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
     margin: 1.25rem 0;
     border-radius: 10px;
-    border: 1px solid #252838;   /* matches --border-subtle */
+    border: 1px solid #252838;  
 }
 
-/* ── Base Table ──────────────────────────────────────────────── */
+/* Base Table */
 table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 0.88rem;
-    background: #1c1f2e;         /* matches --bg-card */
-    color: #dde1f0;              /* matches --text-primary */
-    min-width: 480px;            /* prevents squishing on narrow screens */
+    background: #1c1f2e;       
+    color: #dde1f0;             
+    min-width: 480px;           
 }
 
-/* ── Header Row ──────────────────────────────────────────────── */
+/* Header */
 thead tr {
-    background: #13161e;         /* matches --bg-section */
+    background: #13161e;        
     border-bottom: 2px solid #2e3248;
 }
 
@@ -32,11 +31,11 @@ thead th {
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: #8b92b0;              /* matches --text-secondary */
+    color: #8b92b0;             
     white-space: nowrap;
 }
 
-/* ── Body Rows ───────────────────────────────────────────────── */
+/* Body */
 tbody tr {
     border-bottom: 1px solid #252838;
     transition: background 0.15s ease;
@@ -46,7 +45,7 @@ tbody tr:last-child { border-bottom: none; }
 
 tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
 
-/* Alternating row shading (zebra stripes) */
+/* Alternating rows */
 tbody tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.02);
 }
@@ -62,8 +61,6 @@ tbody td {
     color: #dde1f0;
 }
 
-/* ── First column emphasis ───────────────────────────────────── */
-/* Often the date or meeting number — give it subtle emphasis */
 tbody td:first-child {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
@@ -71,8 +68,6 @@ tbody td:first-child {
     white-space: nowrap;
 }
 
-/* ── Status / Badge Cells ────────────────────────────────────── */
-/* Usage: <td><span class="badge badge-done">Done</span></td> */
 .badge {
     display: inline-block;
     padding: 0.15rem 0.55rem;
@@ -102,7 +97,7 @@ tbody td:first-child {
     border: 1px solid rgba(91, 141, 238, 0.3);
 }
 
-/* ── Caption ─────────────────────────────────────────────────── */
+/* Captions */
 caption {
     text-align: left;
     caption-side: top;
@@ -113,7 +108,7 @@ caption {
     font-style: italic;
 }
 
-/* ── Responsive ──────────────────────────────────────────────── */
+
 @media (max-width: 600px) {
     thead th, tbody td { padding: 0.6rem 0.75rem; }
 }

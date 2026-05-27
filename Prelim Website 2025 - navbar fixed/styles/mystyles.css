@@ -1,10 +1,7 @@
-/* mystyles.css - COMP501 Assignment 2 Group 57
-   AI Decision-Making in Hiring and Recruitment in NZ
-   Kate McLeod & Amira Scholtz */
-
+/* Fonts sourced from google fonts linked below */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap');
 
-/* colour variables */
+/* colours */
 :root {
     --bg-main: #0f1117;
     --bg-section: #161820;
@@ -25,7 +22,6 @@
     --font-mono: 'JetBrains Mono', monospace;
 }
 
-/* basic reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -87,7 +83,7 @@ li {
     font-size: 0.97rem;
 }
 
-/* site title bar at the very top */
+/* site title bar */
 .site-title-bar {
     background-color: var(--bg-main);
     border-bottom: 1px solid var(--border);
@@ -158,7 +154,7 @@ nav {
     background: rgba(91, 141, 238, 0.12);
 }
 
-/* hamburger button - mobile only */
+/* hamburger button for mobiles */
 .nav-toggle {
     display: none;
     background: none;
