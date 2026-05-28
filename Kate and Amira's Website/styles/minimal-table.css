@@ -1,0 +1,114 @@
+/* Table Wrapper */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.25rem 0;
+    border-radius: 10px;
+    border: 1px solid #252838;  
+}
+
+/* Base Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.88rem;
+    background: #1c1f2e;       
+    color: #dde1f0;             
+    min-width: 480px;           
+}
+
+/* Header */
+thead tr {
+    background: #13161e;        
+    border-bottom: 2px solid #2e3248;
+}
+
+thead th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #8b92b0;             
+    white-space: nowrap;
+}
+
+/* Body */
+tbody tr {
+    border-bottom: 1px solid #252838;
+    transition: background 0.15s ease;
+}
+
+tbody tr:last-child { border-bottom: none; }
+
+tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
+
+/* Alternating rows */
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+tbody tr:nth-child(even):hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+tbody td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+    line-height: 1.65;
+    color: #dde1f0;
+}
+
+tbody td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #8b92b0;
+    white-space: nowrap;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.badge-done {
+    background: rgba(77, 184, 154, 0.15);
+    color: #4db89a;
+    border: 1px solid rgba(77, 184, 154, 0.3);
+}
+
+.badge-pending {
+    background: rgba(212, 168, 67, 0.15);
+    color: #d4a843;
+    border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.badge-action {
+    background: rgba(91, 141, 238, 0.15);
+    color: #5b8dee;
+    border: 1px solid rgba(91, 141, 238, 0.3);
+}
+
+/* Captions */
+caption {
+    text-align: left;
+    caption-side: top;
+    font-size: 0.82rem;
+    color: #555c78;
+    margin-bottom: 0.5rem;
+    padding: 0 0 0.4rem 0;
+    font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+    thead th, tbody td { padding: 0.6rem 0.75rem; }
+}

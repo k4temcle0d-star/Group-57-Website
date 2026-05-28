@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP501 | Group 57 - AI in Hiring and Recruitment</title>
+    <link rel="stylesheet" href="styles/mystyles.css">
+</head>
+<body>
+
+<div class="site-title-bar">
+    <h1>AI Decision-Making in Hiring and Recruitment in New Zealand</h1>
+</div>
+
+<nav>
+    <div class="nav-inner">
+        <button class="nav-toggle" id="navToggle">Menu</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="misc/topic.html">Topic</a></li>
+            <li><a href="misc/opportunities.html">Opportunities</a></li>
+            <li><a href="misc/risks.html">Risks</a></li>
+            <li><a href="misc/choices.html">Choices</a></li>
+            <li><a href="misc/references.html">References</a></li>
+            <li><a href="misc/meetings.html">Meetings</a></li>
+            <li><a href="misc/team-members.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="page-header-inner">
+        <h1>AI Decision-Making in Hiring &amp; Recruitment</h1>
+        <p class="page-subtitle">
+            An exploration of how AI tools are reshaping recruitment in New Zealand
+            and what this means for fairness, employment and society.
+        </p>
+    </div>
+</header>
+
+<main>
+
+    <section class="section">
+        <h2 class="section-title">About This Website</h2>
+        <p>
+            This website examines the societal impact of AI decision-making in hiring and recruitment in New Zealand.
+            AI-driven tools are now a major part of how employers select candidates, from automatically
+            screening CVs to conducting video interviews without any human involvement. Our research looks at
+            how these systems work technically, who they affect, and what this means for fairness in the job market.
+        </p>
+        <p>
+            This topic is directly relevant to us as university students entering the workforce. Many of the
+            casual and entry-level jobs students apply for already use automated screening. As we begin
+            applying for graduate roles, AI will likely be the first to evaluate our applications at most
+            large organisations. Understanding how these systems work, and what risks they carry, is both
+            practically useful and ethically important.
+        </p>
+         <img src="images/AI in recruitment image 5.webp" alt="AI in Recruitment" width="500">
+            <p><em>Figure 1. </em><a href="https://www.ismartrecruit.com/upload/blog/main_image/Artificial_Intelligence_(AI)_for_a_Recruitment_Software.webp" target="_blank" rel="noopener noreferrer">(iSmartRecruit, 2025)</a></p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Key Statistics</h2>
+        <div class="card-grid">
+            <div class="stat-card teal">
+                <div class="stat-value">73%</div>
+                <div class="stat-label">of employers globally now use AI in hiring decisions</div>
+                <div class="stat-source">Tilo, 2026</div>
+            </div>
+            <div class="stat-card red">
+                <div class="stat-value">50%</div>
+                <div class="stat-label">of applicants automatically rejected before human review</div>
+                <div class="stat-source">Tilo, 2026</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">18%</div>
+                <div class="stat-label">of NZ organisations changed roles due to AI (up from 7% in 2023)</div>
+                <div class="stat-source">Beyond Recruitment, 2025</div>
+            </div>
+            <div class="stat-card purple">
+                <div class="stat-value">49%</div>
+                <div class="stat-label">of NZ-based job seekers use AI tools like ChatGPT for applications</div>
+                <div class="stat-source">Scitex, 2025</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">What This Site Covers</h2>
+        <div class="card">
+            <h3>Topic</h3>
+            <p>A detailed explanation of what AI recruitment tools are, how they work, and why this topic matters to us as New Zealand students entering the job market.</p>
+        </div>
+        <div class="card">
+            <h3>Opportunities</h3>
+            <p>AI in recruitment can reduce time-to-hire by up to 75%, improve candidate experience, and when designed well, even reduce some forms of human bias in hiring.</p>
+        </div>
+        <div class="card">
+            <h3>Risks</h3>
+            <p>These tools can amplify historical bias, reject candidates at scale with no explanation, and operate in a legal grey area in New Zealand where there is no dedicated AI legislation.</p>
+        </div>
+        <div class="card">
+            <h3>Choices</h3>
+            <p>Organisations face a spectrum of tools from basic CV screening to fully autonomous AI interviews. Each comes with different ethical trade-offs and levels of human oversight.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Project created by Kate McLeod and Amira Scholtz</p>
+    <p>COMP501 | Semester 1, 2026 | Group 57</p>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    if (toggle && links) {
+        toggle.addEventListener('click', function() {
+            links.classList.toggle('open');
+        });
+    }
+</script>
+
+</body>
+</html>
